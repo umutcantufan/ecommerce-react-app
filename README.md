@@ -3,10 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Which packages should be installed?## 
-
-
-## npm install react-scripts
-## npm install
+--> npm install react-scripts
+--> npm install
 
 ## Available Scripts
 
