@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import{BsBasket2Fill, BsSearch} from 'react-icons/bs';
 import { useDispatch, useSelector } from 'react-redux';
 import { searchAction } from '../redux/actions/search';
 import {MdBrightness4, MdBrightness5, MdManageSearch, MdOutlineShoppingCart} from 'react-icons/md'
@@ -36,13 +35,13 @@ function Navbar() {
   }
 
   const redirectFunc = (name) => {
-    if(name == 'home'){
+    if(name === 'home'){
        window.location = "/"
-    }else if(name == 'store'){
+    }else if(name === 'store'){
       window.location = "/store"
-    }else if(name == 'contact'){
+    }else if(name === 'contact'){
       window.location = "/contact"
-    }else if(name == 'login'){
+    }else if(name === 'login'){
       window.location = "/login"
     }
   }
@@ -81,10 +80,10 @@ function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                   <div className='flex items-center space-x-5'>
-                    <div className={`text-lg font-semibold text-gray-900 ${redirect == "/" ? "cursor-pointer  hover:bg-blue-400 text-white font-bold py-2 px-4" : ""} `} onClick={()=>redirectFunc('home')}>Anasayfa</div>
-                    <div className={`text-lg font-semibold text-gray-900 ${redirect == "store" ? "cursor-pointer hover:bg-blue-400 border bg-blue-200 border-blue-200 font-bold py-2 px-4 rounded" : ""} `} onClick={()=>redirectFunc('store')}>Mağaza</div>
-                    <div className={`text-lg font-semibold text-gray-900 ${redirect == "contact" ? "cursor-pointer hover:bg-blue-400 border bg-blue-200 border-blue-200 font-bold py-2 px-4 rounded" : ""} `} onClick={()=>redirectFunc('contact')}>İletişim</div>
-                    <div className={`text-lg font-semibold text-gray-900 ${redirect == "login" ? "cursor-pointer hover:bg-blue-400 border bg-blue-200 border-blue-200 font-bold py-2 px-4 rounded" : ""} `} onClick={()=>redirectFunc('login')}>Giriş</div>
+                    <div className={`text-lg font-semibold text-gray-900 ${redirect === "/" ? "cursor-pointer  hover:bg-blue-400 text-white font-bold py-2 px-4" : ""} `} onClick={()=>redirectFunc('home')}>Anasayfa</div>
+                    <div className={`text-lg font-semibold text-gray-900 ${redirect === "store" ? "cursor-pointer hover:bg-blue-400 border bg-blue-200 border-blue-200 font-bold py-2 px-4 rounded" : ""} `} onClick={()=>redirectFunc('store')}>Mağaza</div>
+                    <div className={`text-lg font-semibold text-gray-900 ${redirect === "contact" ? "cursor-pointer hover:bg-blue-400 border bg-blue-200 border-blue-200 font-bold py-2 px-4 rounded" : ""} `} onClick={()=>redirectFunc('contact')}>İletişim</div>
+                    <div className={`text-lg font-semibold text-gray-900 ${redirect === "login" ? "cursor-pointer hover:bg-blue-400 border bg-blue-200 border-blue-200 font-bold py-2 px-4 rounded" : ""} `} onClick={()=>redirectFunc('login')}>Giriş</div>
             
                     
                   </div>
