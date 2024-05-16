@@ -46,7 +46,7 @@ function Navbar() {
     }
   }
   return (
-    <div className="justify-between bg-blue-600 rounded-sm max-w-7xl mx-auto pt-3 pb-3 px-4 ">
+    <div className="justify-between bg-red-600 rounded-sm max-w-7xl mx-auto pt-3 pb-3 px-4 ">
 
       
         <>

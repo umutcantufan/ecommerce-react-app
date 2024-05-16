@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { BrowserRouter, Route, Routes, } from "react-router-dom";
+import { BrowserRouter, Route, Routes, } from "react-router-dom"; // react router dom v6 import
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import PageContainer from "./containers/PageContainer";

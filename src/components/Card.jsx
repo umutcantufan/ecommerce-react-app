@@ -27,9 +27,10 @@ const Card = () => {
         <div key={i} className='h-28 flex items-center justify-between'>
           <img className='h-24' src={card?.image} alt="" />
           <div className='w-44'>
-            <div className='font-bold text-sm'>{card?.title} ({card?.qty}) </div>
-            <div className='opacity-70 text-xs'>{(card?.description).substring(0,80)}</div>
+            <div className='font-bold text-sm'>{card?.title}  ({card?.qty}) </div>
+            <div className='opacity-70 text-xs'>{(card?.description).substring(0,80)} </div>
           </div>
+
           <div className='font-bold text-lg'>{(card?.qty) * (card?.price)} ₺</div>
           <div onClick={()=>deleteCard(card.id)} className='bg-red-500 w-17 p-2 text-center text-white rounded-lg cursor-pointer'>Sil</div>
           </div>

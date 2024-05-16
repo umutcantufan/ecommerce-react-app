@@ -31,7 +31,7 @@ const Home = () => {
     
 
     {
-    search.length > 0 ? 
+    Array.isArray(search) && search.length > 0 ? 
     search.map((prd, i ) => (
     <ProductCard key={i} prd={prd}/>
     )):
